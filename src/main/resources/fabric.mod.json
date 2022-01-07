@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "lifestealrefabricated",
+  "version": "${version}",
+
+  "name": "Lifesteal Refabricated",
+  "description": "One kill = +1HP for you, -1HP for the killed one.",
+  "authors": [
+    "SansSerif"
+  ],
+  "contact": {
+    "homepage": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "sources": "https://github.com/SansSerif1/lifesteal-refabricated"
+  },
+
+  "license": "GPLv3.0",
+  "icon": "assets/lifestealrefabricated/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "server": [
+      "me.sansserif.lifestealrefabricated.LifeStealMod"
+    ],
+    "client": [
+      "me.sansserif.lifestealrefabricated.ClientNotice"
+    ]
+  },
+  "mixins": [
+    "lifestealrefabricated.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
